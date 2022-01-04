@@ -1,0 +1,28 @@
+  <%- include('../includes/header') %> 
+  <div class="container">
+    <h2>You can contact Feljah here</h2>
+  </div>
+
+  <div class="container " style="width: 300px;">
+	<div class="card">
+	  <div class="card-body">
+		
+		<!-- <button class="btn btn-success">View</button> -->
+	  
+
+	<% if (students.length > 0 ) { %>
+		<% students.forEach(student => { %>
+			<div >
+				<%= student.name %> 
+					<a class=" btn btn-success m-3" href="/contact/<%= student.id %>">View</a> 
+			</div>
+		<% }) %>
+	<% } else {%>
+		No Contact Available
+	<% } %> 
+	
+</div>
+</div>
+</div>
+    
+<%- include('../includes/footer') %> 

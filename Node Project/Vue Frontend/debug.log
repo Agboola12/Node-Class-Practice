@@ -1,0 +1,4 @@
+[1011/205019.392:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1113/030352.607:ERROR:registration_protocol_win.cc(102)] CreateFile: The system cannot find the file specified. (0x2)
+[1113/030509.485:ERROR:registration_protocol_win.cc(102)] CreateFile: The system cannot find the file specified. (0x2)
+[1113/032649.474:ERROR:registration_protocol_win.cc(102)] CreateFile: The system cannot find the file specified. (0x2)

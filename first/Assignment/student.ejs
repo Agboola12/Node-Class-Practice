@@ -1,0 +1,18 @@
+<%- include('../includes/header') %> 
+
+
+	<div >
+		<% if (student) { %>
+			<h3><%= student.name %>  </h3>
+			<% if (student.file.ext == '.html') { %>
+				<a href="../uploads/<%= student.file.filename %> " target="blank">Visit Site</a> <br>
+			<% } else {%>
+				<img src="../uploads/<%= student.file.filename %> " alt=""> <br>
+			<% } %> 
+			Email : <%= student.email %> <br>
+			
+		<% } else {%>
+			No contact available
+		<% } %> 
+	</div>
+<%- include('../includes/footer') %> 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <% if(student.length > 0 ){ %>
+         <!-- student available -->
+         <% student.forEach(student =>{ %>
+            Student name is <%= student %>
+       <% }) %>
+   <% } 
+   else  { %> 
+          No  Student available
+    <%}%>
+
+
+
+    <!-- <% student.forEach(student =>{ %>
+        Student name is <%= student %>
+   <% }) %> -->
+ <br/><br/>
+    <% if (name){ %>
+        Here is the contact page for <%= name %>
+    <% } else{ %> 
+        No Contact
+    <% } %>    
+    
+</body>
+</html>

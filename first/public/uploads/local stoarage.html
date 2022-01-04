@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OBJECT</title>
+</head>
+<body>
+	<form>
+		<div class="formBox">
+			<label form="title">Movie</label>
+			<input type="text" id="title" placeholder="Title" name="">
+		</div>
+		<div class="formBox">
+			<label class="yr">Year</label>
+			<input type="text" id="yr" placeholder="Year" name="">
+		</div>
+		<div class="formBox">
+			<button id="btn">Click to Add</button>
+		</div>
+		<div id="msg">
+			<pre></pre>
+		</div>
+	</form>
+
+<script type="text/javascript" src="external.js">
+	let movie =[];
+	const addMovies ={ev}{
+		ev.preventDefault():
+		let movie= (),
+		id: Date.now(),
+		title: document.getElementById('title').value;
+		year: document.getElementById('yr').value;
+	}
+	movies.push(movie);
+	document.forms(o).reset();
+
+	console.warn('added' , {movies} );
+	let pre = document.querySelector('#msg pre');
+	pre.textContent = '/n' .JSON.stringfy{movies. '/t'2 }
+
+	localStorage.setItem('MymoviesList'. JSON.stringfy(movies) );
+
+	document.addEventlistener('DOMContentLoaded' ,()
+		document.getElementById('btn').addEventlistener('click' addMovies);
+		
+</script>
+</body>
+</html>

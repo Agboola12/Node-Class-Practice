@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VOUCHER</title>
+	</head>
+<body>	
+		VOUCHER
+		<div><input type="text" id="a"> </div><br>
+		<button onclick="generate()">Generate</button> <br>
+		
+<div id="show"></div>
+</body>
+</html>
+<script type="text/javascript">
+	
+	var arr=[];
+	var save;
+	var generate;
+	var sub;
+	var card;
+	function generate() {
+		show.innerHTML="";
+			if (a.value == "") {
+				alert('Enter a Number')
+			}
+			else if (a.value >=20) {
+				alert('Number Outreach')
+			}
+
+		for (var i =0; i < a.value; i++  ){
+
+			var m= ""; count=1;
+
+		for (var h= 1; h<=15; h++){	
+			m = Math.floor(Math.random()* 10000000000000000);			
+			count++;
+		}
+			m = m.toString();
+			var card = m.substr(0,4)+"-"+m.substr(4,4) + "-" + m.substr(8,4) + "-" + m.substr(12,4);
+			// vhc.push(card);
+			document.getElementById('show').innerHTML += card+"<br>";
+
+
+			var generate ={card} + "<br>";
+			arr.push(card);
+			localStorage.recharge = JSON.stringify(arr);
+			var save = JSON.parse(localStorage.recharge);
+			arr = save;
+			
+			console.log( localStorage.recharge);
+	}
+
+	}
+ 		
+		// var aaa=[];
+
+	
+
+
+		// var bb = check.value;
+		// 	bb = localStorage.getItem('card');
+		// 	alert(card);
+	
+
+</script>
+
+
+
+
+ 
